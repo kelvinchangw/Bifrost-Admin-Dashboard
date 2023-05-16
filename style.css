@@ -1,0 +1,89 @@
+* {
+    font-family: 'Roboto Mono';
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    background-color: rgb(212, 154, 154);
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 1fr 5fr;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: rgb(140, 74, 74);
+    grid-column: 1;
+    grid-row: 1 / 3;  /* sidebar spans from the first row to the third (excluded), meaning it covers the first and second rows */
+    padding: 1.6rem 1rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin: 0 0 4rem 0;
+}
+
+.sidebar-middle,
+.sidebar-bottom {
+    /* margin: 0 0 12rem 0; */
+    font-size: 1.2rem;
+}
+
+.sidebar-middle div,
+.sidebar-bottom div {
+    margin: 0 0 0.8rem 0;
+}
+
+.sidebar-bottom {
+    margin-top: auto;
+}
+
+.header {
+    background-color: rgb(108, 22, 22);
+    grid-column: 2 / 4;  /* header starts from the second column */
+    grid-row: 1;  /* header is on the first row */
+    display: grid;
+}
+
+.search-bar {
+    border-radius: 26px;
+    border: 1px solid rgb(0,0,0,.0);
+    box-sizing: border-box;
+    color: rgb(165, 165, 165);
+    transition: all .16s ease-out;
+}
+.search-bar:focus {
+    border: 2px solid violet;
+    outline: none;
+    /* box-shadow: 0 0 5px rgb(0,0,0,.3); */
+}
+
+.main {
+    background-color: rgb(172, 147, 47);
+    grid-column: 2;  /* main content starts from the second column */
+    grid-row: 2;  /* main content is on the second row */
+}
+
+.projects .card {
+    background-color: rgb(104, 65, 143);
+}
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 40px;
+    
+}
+.card {
+    width: 200px;
+    height: 160px;
+}
+
+.announcements {
+    background-color: rgb(65, 143, 72);
+    width: 20vw;
+}
