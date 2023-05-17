@@ -64,26 +64,43 @@ body {
 
 .main {
     background-color: rgb(172, 147, 47);
-    grid-column: 2;  /* main content starts from the second column */
-    grid-row: 2;  /* main content is on the second row */
+    display: grid;
+    grid-column: 2 / 4;  /* main content starts from the second column */
+    grid-row: 2 / 3;  /* main content is on the second row */
+    grid-template-columns: 3fr 1fr;
 }
 
 .projects .card {
     background-color: rgb(104, 65, 143);
 }
 .projects {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+    padding: 2.6rem 1.6rem; */
+}
+
+.card-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr 1fr;
     gap: 40px;
-    
+    padding: 2.6rem 1.6rem;
 }
 .card {
-    width: 200px;
+    width: 1fr;
     height: 160px;
+}
+
+.right-main-container {
+    display: grid;
 }
 
 .announcements {
     background-color: rgb(65, 143, 72);
-    width: 20vw;
+}
+
+.trending {
+    background-color: rgb(66, 138, 190);
 }
