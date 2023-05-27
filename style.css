@@ -4,18 +4,19 @@
 
 body {
     margin: 0;
+    /* Prevents users from scrolling */
+    overflow: hidden;
 }
 
 .container {
     display: grid;
-    background-color: rgb(212, 154, 154);
     grid-template-columns: 20% 60% 20%;
     grid-template-rows: 1fr 5fr;
     height: 100vh;
 }
 
 .sidebar {
-    background-color: rgb(140, 74, 74);
+    background-color: rgb(94, 186, 200);
     grid-column: 1;
     grid-row: 1 / 3;  /* sidebar spans from the first row to the third (excluded), meaning it covers the first and second rows */
     padding: 1.6rem 1rem 1rem 2rem;
@@ -43,24 +44,26 @@ body {
 }
 
 .header {
-    background-color: rgb(108, 22, 22);
+    background-color: rgb(43, 44, 40);
     grid-column: 2 / 4;  /* header starts from the second column */
     grid-row: 1;  /* header is on the first row */
     display: grid;
+    padding: 1rem 1.6rem;
+
 }
 
 .search-bar {
-    border-radius: 26px;
+    width: 40%;
     border: 1px solid rgb(0,0,0,.0);
     box-sizing: border-box;
     color: rgb(165, 165, 165);
     transition: all .16s ease-out;
 }
-.search-bar:focus {
+/* .search-bar:focus {
     border: 2px solid violet;
     outline: none;
-    /* box-shadow: 0 0 5px rgb(0,0,0,.3); */
-}
+    /* box-shadow: 0 0 5px rgb(0,0,0,.3);
+} */
 
 .main {
     background-color: rgb(172, 147, 47);
@@ -71,7 +74,7 @@ body {
 }
 
 .projects .card {
-    background-color: rgb(104, 65, 143);
+    background-color: rgb(43, 44, 40);
 }
 .projects {
     /* display: grid;
@@ -88,19 +91,51 @@ body {
     gap: 40px;
     padding: 2.6rem 1.6rem;
 }
-.card {
+.card-container .card {
     width: 1fr;
     height: 160px;
 }
 
 .right-main-container {
     display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 0 0 2.6rem 0;
 }
 
-.announcements {
-    background-color: rgb(65, 143, 72);
+.main {
+    background-color: rgb(19, 21, 21);
+}
+.projects-text,
+.announcement-text,
+.trending-text {
+    color: rgb(94, 186, 200);
 }
 
+.announcements,
 .trending {
-    background-color: rgb(66, 138, 190);
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding: 0 1.6rem 0 0;
+}
+.announcement-card {
+    background-color: rgb(43, 44, 40);
+    box-sizing: border-box;
+    height: 100%;
+}
+/* .announcement-content {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(43, 44, 40);
+} */
+
+.trending-card {
+    background-color: rgb(43, 44, 40);
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.projects-text {
+    padding: 0 1.6rem;
 }
