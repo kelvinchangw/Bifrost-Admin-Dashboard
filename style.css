@@ -121,6 +121,7 @@ h3 {
     border: 1px solid rgb(0,0,0,.0);
     box-sizing: border-box;
     background-color: var(--papaya-whip);
+    color: var(--jet);
     transition: all .16s ease-out;
     border-radius: 20px;
     caret-color: transparent;
@@ -187,11 +188,11 @@ h3 {
 .main {
     background-color: var(--night);
 }
-.announcement-text,
-.trending-text {
+.announcement-title,
+.trending-title {
     padding: 2.4rem 0 1rem 0;
 }
-.sectors-text {
+.sectors-title {
     padding: 2.4rem 1.6rem 1rem 1.6rem;
 }
 
@@ -257,6 +258,21 @@ h3 {
     font-weight: 700;
 }
 
-.eliminated-status {
+.negative-status {
     color: var(--auburn);
+}
+.positive-status {
+    color: var(--avocado);
+}
+.announcement-msg {
+    color: var(--papaya-whip);
+}
+.announcement-text {
+    font-size: .9rem;
+}
+
+.separator {
+    display: block;
+    border-top: 1px solid var(--papaya-whip); /* Change color to match your design */
+    margin: .1rem 0;
 }
