@@ -100,12 +100,9 @@ button:active {
 .header-top-right {
     gap: 10px;
     display: flex;
+    align-items: center;
 }
 
-.header-top-right {
-    align-items: center;
-    justify-content: center;
-}
 .user-full-name {
     font-weight: 800;
     color: var(--papaya-whip);
@@ -155,19 +152,20 @@ button:active {
 
 .search-bar {
     width: 38rem;
-    border: 1px solid rgb(0,0,0,.0);
+    border: 2.6px solid transparent;
     box-sizing: border-box;
     background-color: var(--papaya-whip);
     color: var(--jet);
-    transition: all .16s ease-out;
+    transition: all .2s ease-out;
     border-radius: 20px;
     caret-color: transparent;
-    height: 30px;
+    height: 2.4rem;
     padding: .8rem;
+    font-size: .9rem;
 }
 .search-bar:focus {
-    outline: solid rgb(94, 186, 200);
-    /* box-shadow: 0 0 5px rgb(0,0,0,.3); */
+    outline: none;
+    border-color: var(--moonstone);
 }
 
 .main {
