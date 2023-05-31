@@ -209,7 +209,14 @@ button:active {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: .2s ease-out all;
+    box-shadow: 0 2px 10px rgb(0, 0, 0);
 }
+.card-container .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 2px 16px rgb(0, 0, 0);
+}
+
 
 .card-stats {
     display: flex;
