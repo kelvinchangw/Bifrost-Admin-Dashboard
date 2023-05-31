@@ -188,13 +188,6 @@ button:active {
 .sectors .card {
     background-color: var(--jet);
 }
-.sectors {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 40px;
-    padding: 2.6rem 1.6rem; */
-}
 
 .card-container {
     display: grid;
