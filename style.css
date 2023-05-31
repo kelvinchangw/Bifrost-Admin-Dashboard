@@ -8,6 +8,7 @@
     --night: rgb(19, 21, 21);
     --avocado: rgb(68, 118, 4);
     --auburn: rgb(162, 44, 41);
+    --papaya-whip: rgb(249, 236, 204);
 }
 
 body {
@@ -89,6 +90,8 @@ h3 {
     justify-content: center;
 }
 .user-full-name {
+    font-weight: 800;
+    color: var(--papaya-whip);
     font-size: 1.2rem;
 }
 
@@ -117,11 +120,12 @@ h3 {
     width: 38rem;
     border: 1px solid rgb(0,0,0,.0);
     box-sizing: border-box;
-    color: rgb(165, 165, 165);
+    background-color: var(--papaya-whip);
     transition: all .16s ease-out;
     border-radius: 20px;
     caret-color: transparent;
     height: 30px;
+    padding: .8rem;
 }
 .search-bar:focus {
     outline: solid rgb(94, 186, 200);
@@ -202,11 +206,15 @@ h3 {
     box-sizing: border-box;
     height: 100%;
 }
-/* .announcement-content {
-    width: 100%;
-    height: 100%;
-    background-color: rgb(43, 44, 40);
-} */
+.announcements .card {
+    color: var(--amethyst);
+    padding: 1rem 1rem;
+}
+.announcement-card.card {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
 
 .trending-card {
     background-color: var(--jet);
@@ -218,9 +226,9 @@ h3 {
 
 /* TEMPORARY */
 .greetings-message {
-    color: var(--moonstone);
-    font-size: 1.8rem;
+    color: rgb(249, 236, 204);
     font-weight: 500;
+    font-size: 1.6rem;
 }
 
 .play-button {
@@ -242,4 +250,13 @@ h3 {
 }
 .positive-stat {
     color: var(--avocado);
+}
+
+.concede,
+.settings {
+    font-weight: 700;
+}
+
+.eliminated-status {
+    color: var(--auburn);
 }
