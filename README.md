@@ -7,11 +7,11 @@
     For a paradigm of intricate futurism, the Bifrost System™
     <br />
     <br />
-    <a href="https://weissey.github.io/Bifrost-Admin-Dashboard/">View Demo</a>
+    <a href="https://weissey.github.io/Bifrost-Admin-Dashboard//">View Demo</a>
     ·
-    <a href="https://weissey.github.io/Bifrost-Admin-Dashboard/issues">Report Bugs</a>
+    <a href="https://github.com/Weissey/Bifrost-Admin-Dashboard/issues">Report Bugs</a>
     ·
-    <a href="https://weissey.github.io/Bifrost-Admin-Dashboard/issues">Request Features</a>
+    <a href="https://github.com/Weissey/Bifrost-Admin-Dashboard/issues">Request Features</a>
   </p>
 </div>
 
