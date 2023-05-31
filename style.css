@@ -144,7 +144,6 @@ h3 {
 }
 
 .sectors .card {
-    padding: 1rem 1rem;
     background-color: var(--jet);
 }
 .sectors {
@@ -206,12 +205,15 @@ h3 {
     background-color: var(--jet);
     box-sizing: border-box;
     height: 100%;
-}
-.announcements .card {
     color: var(--amethyst);
-    padding: 1rem 1rem;
 }
-.announcement-card.card {
+.announcements .card,
+.trending .card,
+.sectors .card {
+    padding: 1rem;
+}
+.announcement-card.card,
+.trending-content {
     display: flex;
     flex-direction: column;
     gap: .4rem;
@@ -264,10 +266,12 @@ h3 {
 .positive-status {
     color: var(--avocado);
 }
-.announcement-msg {
+.announcement-msg,
+.trending-msg {
     color: var(--papaya-whip);
 }
-.announcement-text {
+.announcement-text,
+.trending-text {
     font-size: .9rem;
 }
 
